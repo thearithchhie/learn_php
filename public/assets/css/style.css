@@ -1,0 +1,96 @@
+/* Override Bootstrap default */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar customization */
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Job card hover effect */
+.card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+
+/* Category icons */
+.category-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    transition: all 0.3s;
+}
+
+.category-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Job types badge colors */
+.badge.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.badge.bg-info {
+    background-color: #0dcaf0 !important;
+}
+
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #212529;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Featured tag */
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+/* Footer */
+footer {
+    background-color: #006699;
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: rgba(255,255,255,0.8);
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .footer-heading {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .category-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
